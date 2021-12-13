@@ -1,0 +1,25 @@
+
+*, 
+*:before, *:after {
+	box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+	height: 100%;
+}
+
+p {
+  margin-bottom: map-get($sizes, "base");
+}
+
+.main-container{
+  min-height: 100vh;
+}

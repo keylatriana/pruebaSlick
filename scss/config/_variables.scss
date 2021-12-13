@@ -1,0 +1,94 @@
+// ==========================================================================
+// FontStack
+// ==========================================================================
+
+$font-size : 1.6rem;
+$font-primary      : 'Roboto', sans-serif;
+$font-secondary    :  'Inter', sans-serif;
+// ==========================================================================
+// COLORS : Eje.: background: color( primary, light );
+// ==========================================================================
+
+$colors: (
+   primary: (
+      base     : #FFCA33,
+      dark     : #FFC627
+   ),
+   secondary: (
+      base     : #0D2240,
+      dark     : rgb(83, 46, 0)
+   ),
+   complementary: (
+      one      : #001B3D,
+      two      : #0059A3,
+      three    : #C59158,
+      four     : #004EFF,
+      five     : #FF0000,
+      six      : #FF6C00
+   ),
+   alerts: (
+      sucess   : #28A745,
+      error    : #DC3545,
+      warning  : #FFC100,
+      info     : #0074FC
+   ),
+   controls:(
+      base     : #0D2240,
+      dark     : #0056B3,
+   ),
+   grayscale: (
+      white    : #ffffff,
+      gray-1   : #f2f2f2, 
+      gray-2   : #eeeeee,
+      gray-3   : #cccccc,
+      gray-4   : #999999,
+      gray-5   : #666666,
+      gray-6   : #333333,
+      gray-7   : #4A4A4A,
+      base     : #1b1b1b,
+      black    : #000000
+   ),
+   border:(
+      color-1  : #ced4da,
+      color-2  : #999999
+   )
+);
+
+// ==========================================================================
+// SPACING : Eje.: padding: map-get($sizes, "tiny");
+// ==========================================================================
+
+$sizes: (
+   tiny   : 1.2rem,  // 12px
+   small  : 1.4rem, // 14px
+   base   : 1.6rem,    // 16px
+   thumb  : 2rem, // 20px
+   half   : 2.4rem,  // 24px
+   medium : 3.6rem, // 36px
+   slarge : 4rem,// 40px
+   sslarge : 4.38rem,// 43px
+   large  : 4.8rem,    // 48px
+   xlarge : 5.6rem,  // 56px
+   huge   : 6.4rem     // 64px
+);
+
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+
+$breakpoints: (
+   ss  :360px,
+   s   :414px,
+   sm  : 540px,
+   md  : 720px,
+   lg  : 960px,
+   xl  : 1140px,
+   xxl : 1440px,
+   xxxl :1920px,
+);
+
+// ==========================================================================
+// Alignment
+// ==========================================================================
+
+$alignment: left, center, right, justify;

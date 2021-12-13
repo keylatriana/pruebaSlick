@@ -1,0 +1,186 @@
+main{
+    .slider-home{
+        &__top{
+            color: color(grayscale,white);
+            padding: 0px 10px 0px 10px;
+            position: absolute;
+            text-align: center;
+            top:5%;
+            z-index: 100;
+            h1{
+                text-shadow: 1px 1px 2px black;
+                font-family: $font-primary;
+                font-size: map-get($sizes,medium);
+                padding-bottom: 34px;
+            }
+            p{
+                font-family: $font-secondary;
+                font-size: 1.4rem;
+                font-weight: 400;
+                padding: 0 3px 34px 3px ;
+                text-shadow: 2px 1px 2px black;
+            }
+        }
+        &__action{
+            a{
+                padding: 15px 40px 15px 40px ;
+            }
+        }
+        .slick-dots{
+            z-index: 100;
+        }
+        .left-arrow, .right-arrow{
+            visibility: hidden;
+        }
+    }
+}
+@include mq-min(ss) {
+    main{
+        .slider-home{
+            &__item{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include mq-min(s) {
+    main{
+        .slider-home{
+            &__top{
+                top:7%;
+                h1{
+                    font-size: map-get($sizes,slarge);
+                    padding-top: 5px;
+                    padding-left:10px;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 24px;
+                    padding: 5px 40px 60px 25px ;
+                }
+            }
+            &__action{
+                a{
+                    font-size: 2rem;
+                    padding: 20px 85px 18px 85px ;
+                }
+            }
+            &__item{
+                img{
+                    height: 543px;
+                }
+            }
+        }
+        .slick-dots{
+           bottom: 42px;
+        }
+    }
+
+}
+@include mq-min(sm) {
+    main{
+        .slider-home{
+            &__top{
+                top:9%;
+                h1{
+                    font-size: map-get($sizes,large);
+                }
+                p{
+                    font-size: 2rem;
+                    line-height: 33px;
+                }
+            }
+        }
+    }
+}
+@include mq-min(md) {
+    main{
+        .slider-home{
+            &__top{
+                left: 15%;
+                top:10%;
+                width: 75%;
+                &-title{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    width: 90%;
+                }
+            }
+            &__logo{
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+            .left-arrow, .right-arrow{
+                visibility: visible;
+            }
+        }
+        
+    }
+}
+@include mq-min(lg) {
+    main{
+        .slider-home{
+            &__top{
+                left: 13%;
+                top:10%;
+                &-title{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@include mq-min(xxl) {
+    main{
+        .slider-home{
+            &__top{
+                left: 20%;
+                top:26%;
+                width: 60%;
+                &-title{
+                    width: 80%;
+                }
+                h1{
+                    font-size: 4.5rem;
+                    padding-bottom: 20px;
+                }
+                p{
+                    font-size: 1.6rem;
+                    padding: 6px 140px 100px 142px ;
+                    line-height: 24px;
+                } 
+            }
+            &__item{
+                background-color: seagreen;
+                img{
+                    height:630px;
+                }
+            }
+            .slick-dots{
+                bottom: 55px;
+            }
+        }
+    }
+}
+@include mq-min(xxxl) {
+    main{
+        .slider-home{
+            &__top{
+                left: 21%;
+                &-title{
+                    width: 70%;
+                }
+                h1{
+                    padding-bottom: 40px;
+                }
+                p{
+                    font-size: 2.3rem;
+                    padding-bottom:70px;
+                    line-height: 35px;
+                } 
+            }
+        }
+    }
+}

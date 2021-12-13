@@ -1,0 +1,62 @@
+a, button {
+	text-decoration: none;
+	outline: 0;
+   transition: color .1s ease-out;
+
+   &.button {
+      &:hover {
+         text-decoration: none;
+      }
+   }
+
+	&:hover, &:focus {
+      color: color( controls, dark );
+      @include mq-max(sm){
+         text-decoration: none;
+      }
+   }
+   &.underline-link{
+      color: color(controls,base);
+      cursor: pointer;
+      font-family: $font-primary;
+      font-size: $font-size;
+      font-weight: bold;
+      text-decoration: underline;
+   }
+   &.text-link {
+      font-family: $font-primary;
+      font-size: $font-size;
+      text-transform: uppercase;
+      border: none;
+      font-weight: 700;
+      line-height: 1;
+      outline: none;
+      background-color: transparent;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      padding: 0;
+      cursor: pointer;
+      &.text-primary-base {
+         color: color( primary, base );
+         &:hover {
+            color: color( primary, dark );
+         }
+      }
+      &.text-secondary-base {
+         color: color( secondary, base );
+         &:hover {
+            color: color( secondary, dark );
+         }
+      }
+      &.text-primary-base{
+         color: color( primary, dark );
+         font-size: map-get($sizes, thumb);
+         text-decoration: underline;
+         text-transform: none;
+         &:hover {
+            color: color( primary, base );
+         }
+      }
+   }
+}
