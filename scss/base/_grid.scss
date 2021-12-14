@@ -1,8 +1,8 @@
 .container {
    width: 100%;
    padding: {
-      left: 1rem;
-      right: 1rem;
+      left: 1.5rem;
+      right: 1.5rem;
    };
    margin: {
       left: auto;
@@ -12,7 +12,10 @@
       max-width: map-get($breakpoints, "lg") - 100px ;
    }
    @include mq-min(lg) {
-      max-width: 1140px;
+      max-width: 1240px;
+   }
+   @include mq-min(xxl) {
+      max-width: 1305px;
    }
 }
 

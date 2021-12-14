@@ -8,3 +8,12 @@ $('.slider').slick(
 
     }
 );
+$('.card-slider').slick(
+    {
+        dots:true,
+        infinite:false,
+        prevArrow:'<i class="icon-chevron-left left-arrow"></i>',
+        nextArrow:'<i class="icon-chevron-right right-arrow"></i>',
+
+    }
+);

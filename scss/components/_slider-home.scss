@@ -181,6 +181,14 @@ main{
                     line-height: 35px;
                 } 
             }
+            &__item{
+                img{
+                    height:630px;
+                }
+            }
+            .slick-dots{
+                bottom: 55px;
+            }
         }
     }
 }

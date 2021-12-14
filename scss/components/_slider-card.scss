@@ -1,0 +1,320 @@
+main{
+    .slider-card{
+        &__title{
+                color: color(secondary,base);
+                font-family: $font-primary;
+                font-size: 2.5rem;     
+                padding-top: 35px;
+                padding-bottom: 20px;
+                text-align: center;
+        }
+        &__description{
+            p{
+                color: color(secondary,base);
+                font-family: $font-secondary;
+                font-size: 1.4rem;
+                font-weight: 400;
+                text-align: center;
+
+            }
+        }
+        &__icon{
+            img{
+                margin: 0 auto 0 auto;
+                padding: 20px;
+            }
+        }
+        &__body{
+            text-align: center;
+            &-step{
+                color: color(primary,dark);
+                font-family: $font-primary;
+                font-size: 5rem;
+                font-weight: 600;
+            }
+            &-description{
+                color: color(secondary,base);
+                font-family: $font-primary;
+                font-size: 2.5rem;
+                font-weight: 900;
+                padding-bottom: 80px;
+            }
+            &-amount{
+                color: color(secondary,base);
+                font-family: $font-primary;
+                font-size: 2.5rem;
+                font-weight: 900;
+            }
+
+        }
+        .card-slider{
+            margin-bottom: 30px;            
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: 4px 4px 5px rgba(175, 174, 174, 0.795);
+        }
+        &__image{
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;        
+        }
+        .slick-dots{
+            bottom: 85px;
+            li {
+                button{
+                background-color: color(secondary,base);
+                height: 14px;
+                width: 14px;
+                }
+            }
+            .slick-active button{
+                border: none;
+                background:color(primary,dark);
+                background-size: 12px;
+                height: 14px;
+                width: 14px;
+            } 
+        }
+        .left-arrow{
+            font-size: 4rem;
+            height: 40px;
+            left: 28%;
+            top: 95.3%;
+        }
+        .right-arrow{
+            font-size: 4rem;
+            height: 40px;
+            right: 28%;
+            top: 95.3%;
+
+        }
+    }
+}
+@include mq-min(ss) {
+ main{
+     .slider-card{
+        &__image{
+            width: 100%;  
+        }
+      }
+    }
+}
+@include mq-min(s) {
+    main{
+        .slider-card{
+            &__title{
+                font-size: 3rem;     
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }
+        &__description{
+            p{
+                font-size: 1.4rem;
+                font-weight: 400;
+                padding: 0px 30px 29px 30px ;
+            }
+        }
+        &__image{
+            height: 398px;  
+        }
+        &__icon{
+            padding-top: 35px;
+            padding-bottom: 18px;
+            img{
+                height:129px;
+                width: 225px;
+                padding: 0;
+            }
+        }
+        .card-slider{       
+            border-top-left-radius: 15px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius:15px ;
+            box-shadow: 4px 4px 5px rgba(175, 174, 174, 0.795);
+        }
+        &__image{
+                border-top-left-radius: 15px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius:15px ;      
+        }
+        &__body{
+            &-description{
+                font-size: 2.2rem;
+                line-height:32px;
+                margin-top: -4px;
+                padding: 0 30px 80px 30px ;
+            }
+            &-amount{
+                padding-top: 12px;
+                padding-bottom: 20px;
+            }
+        }
+        .slick-dots{
+            bottom: 115px;
+        }
+        .left-arrow{
+            font-size: 6rem;
+            height: 40px;
+            left: 30%;
+            top: 93%;
+        }
+        .right-arrow{
+            font-size: 6.5rem;
+            height: 40px;
+            right: 35.8%;
+            top: 93%;
+
+        }
+       }
+   }
+}
+@include mq-min(lg) {
+    main{
+        .slider-card{     
+            &__image{
+                height: 450px;
+            }
+            &__title{
+                font-size: 3.5rem;     
+                padding-bottom: 13px;
+                
+            }
+            &__description{
+                p{
+                    font-size: 1.6rem;
+                    padding-left: 45px;
+                    padding-bottom: 60px;
+                    font-weight: 500;
+                }
+            }
+            &__container{
+                display: flex;
+            }
+            &__body{
+                display:block ;
+                width: 45%;
+                &-description{
+                    font-size: 2.2rem;
+                    line-height:32px;
+                    margin-top: 0;
+                    padding: 0 40px 20px 40px ;
+                }
+                &-amount{
+                    padding-right: 70px;
+                    padding-bottom: 0px;
+                    text-align: right;
+                }
+            }
+            .slick-dots{
+                top: 22%;
+                left: 98%;
+                li {
+                    margin-top: 15px;
+                } 
+                .slick-active button{
+                    border: 1px solid #FFC627;
+                    background: url(../image/elipse.png)  no-repeat center;
+                    background-size: 11px;
+                    height: 21px;
+                    margin-left: -3px;
+                    width: 21px;
+                } 
+            }
+            .left-arrow{
+                left: 83%;
+                top: 87%;
+            }
+            .right-arrow{
+                right: 3%;
+                top: 87%;
+    
+            }
+        }
+    }
+}
+@include mq-min(xl) {
+    main{
+        .slider-card{     
+            &__body{
+                &-description{
+                    font-size: 2.8rem;
+                    padding: 10px 65px 11px 55px ;
+                }
+            }
+            .left-arrow{
+                left: 86%;
+                top: 87.5%;
+            }
+        }
+    }
+}        
+@include mq-min(xxl) {
+    main{
+        .slider-card{     
+            &__image{
+                height: 467px;
+                width: 730px;
+            }
+            &__description{
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+            &__icon{
+                padding-top: 70px;
+                margin-left: -30px;
+                padding-bottom: 18px;
+                img{
+                    height:129px;
+                    width: 225px;
+                    padding: 0;
+                }
+            }
+            &__container{
+                display: flex;
+                height: 467px;
+            }
+            &__body{
+                &-step{
+                    font-size: 5.4rem;
+                    padding: 20px 35px 0 0 ;
+                    line-height:40px;
+                }
+                &-description{
+                    font-size: 3rem;
+                    line-height:40px;
+                    margin-top: 0;
+                    padding: 10px 65px 3px 55px ;
+                }
+                &-amount{
+                    padding-right: 50px;
+                    padding-bottom: 0px;
+                    text-align: right;
+                }
+            }
+            .slick-dots{
+                top: 28.5%;
+                left: 99%;
+                li {
+                    margin-top: 14px;
+                } 
+                .slick-active button{
+                    border: 1px solid #FFC627;
+                    background: url(../image/elipse.png)  no-repeat center;
+                    background-size: 11px;
+                    height: 21px;
+                    margin-left: -3px;
+                    width: 21px;
+                } 
+            }
+            .left-arrow{
+                left: 88.5%;
+                top: 89.6%;
+            }
+            .right-arrow{
+                right: 1%;
+                top: 89.5%;
+    
+            }
+        }
+    }
+}
