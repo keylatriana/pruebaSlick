@@ -1374,38 +1374,31 @@ main .slider-card__body-description {
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
-/* line 42, ../scss/components/_slider-card.scss */
-main .slider-card__body-amount {
-  color: #0D2240;
-  font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 900;
-}
-/* line 50, ../scss/components/_slider-card.scss */
+/* line 43, ../scss/components/_slider-card.scss */
 main .slider-card .card-slider {
   margin-bottom: 30px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   box-shadow: 4px 4px 5px rgba(175, 174, 174, 0.795);
 }
-/* line 56, ../scss/components/_slider-card.scss */
+/* line 49, ../scss/components/_slider-card.scss */
 main .slider-card__image {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-/* line 60, ../scss/components/_slider-card.scss */
+/* line 53, ../scss/components/_slider-card.scss */
 main .slider-card .slick-dots {
   bottom: 85px;
 }
-/* line 63, ../scss/components/_slider-card.scss */
+/* line 56, ../scss/components/_slider-card.scss */
 main .slider-card .slick-dots li button {
   background-color: #0D2240;
   height: 14px;
   width: 14px;
 }
-/* line 69, ../scss/components/_slider-card.scss */
+/* line 62, ../scss/components/_slider-card.scss */
 main .slider-card .slick-dots .slick-active button {
   border: none;
   background: #FFC627;
@@ -1413,14 +1406,25 @@ main .slider-card .slick-dots .slick-active button {
   height: 14px;
   width: 14px;
 }
-/* line 77, ../scss/components/_slider-card.scss */
+/* line 70, ../scss/components/_slider-card.scss */
+main .slider-card__counter {
+  color: #0D2240;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  position: absolute;
+  left: 44%;
+  top: 92.9%;
+}
+/* line 80, ../scss/components/_slider-card.scss */
 main .slider-card .left-arrow {
   font-size: 4rem;
   height: 40px;
   left: 28%;
   top: 95.3%;
 }
-/* line 83, ../scss/components/_slider-card.scss */
+/* line 86, ../scss/components/_slider-card.scss */
 main .slider-card .right-arrow {
   font-size: 4rem;
   height: 40px;
@@ -1429,233 +1433,227 @@ main .slider-card .right-arrow {
 }
 
 @media (min-width: 360px) {
-  /* line 95, ../scss/components/_slider-card.scss */
+  /* line 98, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     width: 100%;
   }
 }
 @media (min-width: 414px) {
-  /* line 104, ../scss/components/_slider-card.scss */
+  /* line 107, ../scss/components/_slider-card.scss */
   main .slider-card__title {
     font-size: 3rem;
     padding-top: 30px;
     padding-bottom: 15px;
   }
-  /* line 110, ../scss/components/_slider-card.scss */
+  /* line 113, ../scss/components/_slider-card.scss */
   main .slider-card__description p {
     font-size: 1.4rem;
     font-weight: 400;
     padding: 0px 30px 29px 30px;
   }
-  /* line 116, ../scss/components/_slider-card.scss */
+  /* line 119, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     height: 398px;
   }
-  /* line 119, ../scss/components/_slider-card.scss */
+  /* line 122, ../scss/components/_slider-card.scss */
   main .slider-card__icon {
     padding-top: 35px;
     padding-bottom: 18px;
   }
-  /* line 122, ../scss/components/_slider-card.scss */
+  /* line 125, ../scss/components/_slider-card.scss */
   main .slider-card__icon img {
     height: 129px;
     width: 225px;
     padding: 0;
   }
-  /* line 128, ../scss/components/_slider-card.scss */
+  /* line 131, ../scss/components/_slider-card.scss */
   main .slider-card .card-slider {
     border-top-left-radius: 15px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
     box-shadow: 4px 4px 5px rgba(175, 174, 174, 0.795);
   }
-  /* line 134, ../scss/components/_slider-card.scss */
+  /* line 137, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     border-top-left-radius: 15px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
   }
-  /* line 140, ../scss/components/_slider-card.scss */
+  /* line 143, ../scss/components/_slider-card.scss */
   main .slider-card__body-description {
     font-size: 2.2rem;
     line-height: 32px;
     margin-top: -4px;
-    padding: 0 30px 80px 30px;
+    padding: 0 30px 165px 30px;
   }
-  /* line 146, ../scss/components/_slider-card.scss */
-  main .slider-card__body-amount {
-    padding-top: 12px;
-    padding-bottom: 20px;
+  /* line 150, ../scss/components/_slider-card.scss */
+  main .slider-card__counter {
+    left: 44.7%;
+    top: 92%;
   }
-  /* line 151, ../scss/components/_slider-card.scss */
+  /* line 154, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots {
     bottom: 115px;
   }
-  /* line 154, ../scss/components/_slider-card.scss */
+  /* line 157, ../scss/components/_slider-card.scss */
   main .slider-card .left-arrow {
     font-size: 6rem;
     height: 40px;
     left: 30%;
-    top: 93%;
+    top: 92.6%;
   }
-  /* line 160, ../scss/components/_slider-card.scss */
+  /* line 163, ../scss/components/_slider-card.scss */
   main .slider-card .right-arrow {
     font-size: 6.5rem;
     height: 40px;
     right: 35.8%;
-    top: 93%;
+    top: 92.5%;
   }
 }
 @media (min-width: 960px) {
-  /* line 173, ../scss/components/_slider-card.scss */
+  /* line 176, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     height: 450px;
   }
-  /* line 176, ../scss/components/_slider-card.scss */
+  /* line 179, ../scss/components/_slider-card.scss */
   main .slider-card__title {
     font-size: 3.5rem;
     padding-bottom: 13px;
   }
-  /* line 182, ../scss/components/_slider-card.scss */
+  /* line 185, ../scss/components/_slider-card.scss */
   main .slider-card__description p {
     font-size: 1.6rem;
     padding-left: 45px;
     padding-bottom: 60px;
     font-weight: 500;
   }
-  /* line 189, ../scss/components/_slider-card.scss */
+  /* line 192, ../scss/components/_slider-card.scss */
   main .slider-card__container {
     display: flex;
   }
-  /* line 192, ../scss/components/_slider-card.scss */
+  /* line 195, ../scss/components/_slider-card.scss */
   main .slider-card__body {
     display: block;
     width: 45%;
   }
-  /* line 195, ../scss/components/_slider-card.scss */
+  /* line 198, ../scss/components/_slider-card.scss */
   main .slider-card__body-description {
     font-size: 2.2rem;
     line-height: 32px;
     margin-top: 0;
     padding: 0 40px 20px 40px;
   }
-  /* line 201, ../scss/components/_slider-card.scss */
-  main .slider-card__body-amount {
-    padding-right: 70px;
-    padding-bottom: 0px;
+  /* line 205, ../scss/components/_slider-card.scss */
+  main .slider-card__counter {
     text-align: right;
+    right: 7%;
+    top: 86%;
   }
-  /* line 207, ../scss/components/_slider-card.scss */
+  /* line 210, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots {
     top: 22%;
     left: 98%;
   }
-  /* line 210, ../scss/components/_slider-card.scss */
+  /* line 213, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots li {
     margin-top: 15px;
   }
-  /* line 213, ../scss/components/_slider-card.scss */
+  /* line 217, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots .slick-active button {
-    border: 1px solid #FFC627;
-    background: url(../image/elipse.png) no-repeat center;
-    background-size: 11px;
-    height: 21px;
-    margin-left: -3px;
-    width: 21px;
-  }
-  /* line 222, ../scss/components/_slider-card.scss */
-  main .slider-card .left-arrow {
-    left: 83%;
-    top: 87%;
+    border: 3px solid white;
+    background: #FFC627;
+    padding: 4px;
+    width: 11px;
+    height: 11px;
+    outline: 1px solid #FFC627;
   }
   /* line 226, ../scss/components/_slider-card.scss */
+  main .slider-card .left-arrow {
+    left: 83%;
+    top: 87.5%;
+  }
+  /* line 230, ../scss/components/_slider-card.scss */
   main .slider-card .right-arrow {
     right: 3%;
     top: 87%;
   }
 }
 @media (min-width: 1140px) {
-  /* line 238, ../scss/components/_slider-card.scss */
+  /* line 242, ../scss/components/_slider-card.scss */
   main .slider-card__body-description {
     font-size: 2.8rem;
     padding: 10px 65px 11px 55px;
   }
-  /* line 243, ../scss/components/_slider-card.scss */
+  /* line 247, ../scss/components/_slider-card.scss */
+  main .slider-card__counter {
+    right: 6%;
+  }
+  /* line 250, ../scss/components/_slider-card.scss */
   main .slider-card .left-arrow {
     left: 86%;
     top: 87.5%;
   }
 }
 @media (min-width: 1440px) {
-  /* line 253, ../scss/components/_slider-card.scss */
+  /* line 260, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     height: 467px;
     width: 730px;
   }
-  /* line 258, ../scss/components/_slider-card.scss */
+  /* line 265, ../scss/components/_slider-card.scss */
   main .slider-card__description p {
     font-size: 1.6rem;
   }
-  /* line 262, ../scss/components/_slider-card.scss */
+  /* line 269, ../scss/components/_slider-card.scss */
   main .slider-card__icon {
     padding-top: 70px;
     margin-left: -30px;
     padding-bottom: 18px;
   }
-  /* line 266, ../scss/components/_slider-card.scss */
+  /* line 273, ../scss/components/_slider-card.scss */
   main .slider-card__icon img {
     height: 129px;
     width: 225px;
     padding: 0;
   }
-  /* line 272, ../scss/components/_slider-card.scss */
+  /* line 279, ../scss/components/_slider-card.scss */
   main .slider-card__container {
     display: flex;
     height: 467px;
   }
-  /* line 277, ../scss/components/_slider-card.scss */
+  /* line 284, ../scss/components/_slider-card.scss */
   main .slider-card__body-step {
     font-size: 5.4rem;
     padding: 20px 35px 0 0;
     line-height: 40px;
   }
-  /* line 282, ../scss/components/_slider-card.scss */
+  /* line 289, ../scss/components/_slider-card.scss */
   main .slider-card__body-description {
     font-size: 3rem;
     line-height: 40px;
     margin-top: 0;
     padding: 10px 65px 3px 55px;
   }
-  /* line 288, ../scss/components/_slider-card.scss */
-  main .slider-card__body-amount {
-    padding-right: 50px;
-    padding-bottom: 0px;
-    text-align: right;
+  /* line 296, ../scss/components/_slider-card.scss */
+  main .slider-card__counter {
+    right: 3.8%;
+    top: 88.8%;
   }
-  /* line 294, ../scss/components/_slider-card.scss */
+  /* line 300, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots {
     top: 28.5%;
     left: 99%;
   }
-  /* line 297, ../scss/components/_slider-card.scss */
+  /* line 303, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots li {
     margin-top: 14px;
   }
-  /* line 300, ../scss/components/_slider-card.scss */
-  main .slider-card .slick-dots .slick-active button {
-    border: 1px solid #FFC627;
-    background: url(../image/elipse.png) no-repeat center;
-    background-size: 11px;
-    height: 21px;
-    margin-left: -3px;
-    width: 21px;
-  }
-  /* line 309, ../scss/components/_slider-card.scss */
+  /* line 308, ../scss/components/_slider-card.scss */
   main .slider-card .left-arrow {
     left: 88.5%;
     top: 89.6%;
   }
-  /* line 313, ../scss/components/_slider-card.scss */
+  /* line 312, ../scss/components/_slider-card.scss */
   main .slider-card .right-arrow {
     right: 1%;
     top: 89.5%;
