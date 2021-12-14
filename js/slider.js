@@ -1,6 +1,8 @@
 $(document).ready(function(){ 
     //contador del Slider
     count();
+    //Desactivar el arrow cuando no se utilice
+    disable ();
 });
 $('.slider').slick(
     {
@@ -45,4 +47,21 @@ var $slider = $('.card-slider');
         }
     );
     }
+}
+function disable (){
+    var $slider2 = $('.card-slider');
+    $('.left-arrow').hide();
+    $slider2.on('afterChange', function(event, slick, currentSlide) {  	
+    console.log(currentSlide);
+      if (currentSlide === 0) {
+        $('.left-arrow').hide();
+        $('.right-arrow').show();
+      }
+      else {
+          $('.left-arrow').show();
+      }
+      if (slick.slideCount === currentSlide + 1) {
+          $('.right-arrow').hide();
+      }
+    });
 }
