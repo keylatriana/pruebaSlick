@@ -1404,9 +1404,10 @@ main .slider-card .slick-dots .slick-active button {
   background: #FFC627;
   background-size: 12px;
   height: 14px;
+  outline: none;
   width: 14px;
 }
-/* line 70, ../scss/components/_slider-card.scss */
+/* line 71, ../scss/components/_slider-card.scss */
 main .slider-card__counter {
   color: #0D2240;
   font-family: "Roboto", sans-serif;
@@ -1417,14 +1418,14 @@ main .slider-card__counter {
   left: 44%;
   top: 92.9%;
 }
-/* line 80, ../scss/components/_slider-card.scss */
+/* line 81, ../scss/components/_slider-card.scss */
 main .slider-card .left-arrow {
   font-size: 4rem;
   height: 40px;
   left: 28%;
   top: 95.3%;
 }
-/* line 86, ../scss/components/_slider-card.scss */
+/* line 87, ../scss/components/_slider-card.scss */
 main .slider-card .right-arrow {
   font-size: 4rem;
   height: 40px;
@@ -1433,76 +1434,76 @@ main .slider-card .right-arrow {
 }
 
 @media (min-width: 360px) {
-  /* line 98, ../scss/components/_slider-card.scss */
+  /* line 99, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     width: 100%;
   }
 }
 @media (min-width: 414px) {
-  /* line 107, ../scss/components/_slider-card.scss */
+  /* line 108, ../scss/components/_slider-card.scss */
   main .slider-card__title {
     font-size: 3rem;
     padding-top: 30px;
     padding-bottom: 15px;
   }
-  /* line 113, ../scss/components/_slider-card.scss */
+  /* line 114, ../scss/components/_slider-card.scss */
   main .slider-card__description p {
     font-size: 1.4rem;
     font-weight: 400;
     padding: 0px 30px 29px 30px;
   }
-  /* line 119, ../scss/components/_slider-card.scss */
+  /* line 120, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     height: 398px;
   }
-  /* line 122, ../scss/components/_slider-card.scss */
+  /* line 123, ../scss/components/_slider-card.scss */
   main .slider-card__icon {
     padding-top: 35px;
     padding-bottom: 18px;
   }
-  /* line 125, ../scss/components/_slider-card.scss */
+  /* line 126, ../scss/components/_slider-card.scss */
   main .slider-card__icon img {
     height: 129px;
     width: 225px;
     padding: 0;
   }
-  /* line 131, ../scss/components/_slider-card.scss */
+  /* line 132, ../scss/components/_slider-card.scss */
   main .slider-card .card-slider {
     border-top-left-radius: 15px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
     box-shadow: 4px 4px 5px rgba(175, 174, 174, 0.795);
   }
-  /* line 137, ../scss/components/_slider-card.scss */
+  /* line 138, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     border-top-left-radius: 15px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
   }
-  /* line 143, ../scss/components/_slider-card.scss */
+  /* line 144, ../scss/components/_slider-card.scss */
   main .slider-card__body-description {
     font-size: 2.2rem;
     line-height: 32px;
     margin-top: -4px;
     padding: 0 30px 165px 30px;
   }
-  /* line 150, ../scss/components/_slider-card.scss */
+  /* line 151, ../scss/components/_slider-card.scss */
   main .slider-card__counter {
     left: 44.7%;
     top: 92%;
   }
-  /* line 154, ../scss/components/_slider-card.scss */
+  /* line 155, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots {
     bottom: 115px;
   }
-  /* line 157, ../scss/components/_slider-card.scss */
+  /* line 158, ../scss/components/_slider-card.scss */
   main .slider-card .left-arrow {
     font-size: 6rem;
     height: 40px;
     left: 30%;
     top: 92.6%;
   }
-  /* line 163, ../scss/components/_slider-card.scss */
+  /* line 164, ../scss/components/_slider-card.scss */
   main .slider-card .right-arrow {
     font-size: 6.5rem;
     height: 40px;
@@ -1511,50 +1512,50 @@ main .slider-card .right-arrow {
   }
 }
 @media (min-width: 960px) {
-  /* line 176, ../scss/components/_slider-card.scss */
+  /* line 177, ../scss/components/_slider-card.scss */
   main .slider-card__image {
     height: 450px;
   }
-  /* line 179, ../scss/components/_slider-card.scss */
+  /* line 180, ../scss/components/_slider-card.scss */
   main .slider-card__title {
     font-size: 3.5rem;
     padding-bottom: 13px;
   }
-  /* line 185, ../scss/components/_slider-card.scss */
+  /* line 186, ../scss/components/_slider-card.scss */
   main .slider-card__description p {
     font-size: 1.6rem;
     padding-left: 45px;
     padding-bottom: 60px;
     font-weight: 500;
   }
-  /* line 192, ../scss/components/_slider-card.scss */
+  /* line 193, ../scss/components/_slider-card.scss */
   main .slider-card__container {
     display: flex;
   }
-  /* line 195, ../scss/components/_slider-card.scss */
+  /* line 196, ../scss/components/_slider-card.scss */
   main .slider-card__body {
     display: block;
     width: 45%;
   }
-  /* line 198, ../scss/components/_slider-card.scss */
+  /* line 199, ../scss/components/_slider-card.scss */
   main .slider-card__body-description {
     font-size: 2.2rem;
     line-height: 32px;
     margin-top: 0;
     padding: 0 40px 20px 40px;
   }
-  /* line 205, ../scss/components/_slider-card.scss */
+  /* line 206, ../scss/components/_slider-card.scss */
   main .slider-card__counter {
     text-align: right;
     right: 7%;
     top: 86%;
   }
-  /* line 210, ../scss/components/_slider-card.scss */
+  /* line 211, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots {
     top: 22%;
     left: 98%;
   }
-  /* line 213, ../scss/components/_slider-card.scss */
+  /* line 214, ../scss/components/_slider-card.scss */
   main .slider-card .slick-dots li {
     margin-top: 15px;
   }

@@ -64,6 +64,7 @@ main{
                 background:color(primary,dark);
                 background-size: 12px;
                 height: 14px;
+                outline: none;
                 width: 14px;
             } 
         }
@@ -213,7 +214,6 @@ main{
                 li {
                     margin-top: 15px;
                 } 
-                
                 .slick-active button{ 
                     border: 3px solid white; 
                     background: #FFC627;
