@@ -1,4 +1,7 @@
 $(document).ready(function(){ 
+    //contador del Slider
+    count();
+});
 $('.slider').slick(
     {
         autoplay: true,
@@ -10,37 +13,36 @@ $('.slider').slick(
     }
 );
 //Contador del Slider- Card
+function count() {
 var $slider = $('.card-slider');
 
-if ($slider.length) {
-  var currentSlide;
-  var slidesCount;
-  var sliderCounter = document.createElement('div');
-  sliderCounter.classList.add('slider-card__counter');
-  
-  var updateSliderCounter = function(slick, currentIndex) {
-    currentSlide = slick.slickCurrentSlide() + 1;
-    slidesCount = slick.slideCount;
-    $(sliderCounter).text(currentSlide + '/' +slidesCount)
-  };
+    if ($slider.length) {
+    var currentSlide;
+    var slidesCount;
+    var sliderCounter = document.createElement('div');
+    sliderCounter.classList.add('slider-card__counter');
+    
+    var updateSliderCounter = function(slick, currentIndex) {
+        currentSlide = slick.slickCurrentSlide() + 1;
+        slidesCount = slick.slideCount;
+        $(sliderCounter).text(currentSlide + '/' +slidesCount)
+    };
 
-  $slider.on('init', function(event, slick) {
-    $slider.append(sliderCounter);
-    updateSliderCounter(slick);
-  });
+    $slider.on('init', function(event, slick) {
+        $slider.append(sliderCounter);
+        updateSliderCounter(slick);
+    });
 
-  $slider.on('afterChange', function(event, slick, currentSlide) {
-    updateSliderCounter(slick, currentSlide);
-  });
-  
-
-  $slider.slick(
-      {
-        dots:true,
-        infinite:false,
-        prevArrow:'<i class="icon-chevron-left left-arrow"></i>',
-        nextArrow:'<i class="icon-chevron-right right-arrow"></i>',
-      }
-  );
+    $slider.on('afterChange', function(event, slick, currentSlide) {
+        updateSliderCounter(slick, currentSlide);
+    });
+    $slider.slick(
+        {
+            dots:true,
+            infinite:false,
+            prevArrow:'<i class="icon-chevron-left left-arrow"></i>',
+            nextArrow:'<i class="icon-chevron-right right-arrow"></i>',
+        }
+    );
+    }
 }
-});
