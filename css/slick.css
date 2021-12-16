@@ -147,7 +147,7 @@
     outline: 2px solid #FFC627;
     
 }
-.left-arrow{
+.left-arrow, .left1-arrow{
     background-color: transparent;
     color: #FFC627;
     font-size: 6.3rem;
@@ -161,7 +161,7 @@
     width: 40px;
     z-index: 100;
 }
-.right-arrow{
+.right-arrow, .right1-arrow{
     background-color: transparent;
     color: #FFC627;
     font-size: 6.3rem;
