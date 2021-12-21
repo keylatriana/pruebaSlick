@@ -1204,7 +1204,7 @@ main .form__group input {
   color: #747373;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
-  font-weight: 900;
+  font-weight: 500;
   padding: 10px 30px 0 10px;
   width: 95%;
   border-color: transparent;
@@ -1221,7 +1221,7 @@ main .form__group .check {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 600;
   left: 20px;
   margin-bottom: 2px;
   padding: 15px 0px 0px 30px;
@@ -1274,34 +1274,35 @@ main .form__group label.error {
   color: #EE0004;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+  font-weight: 400;
   padding-left: 10px;
 }
-/* line 119, ../scss/components/_form.scss */
+/* line 120, ../scss/components/_form.scss */
 main .form__group input.error {
   border-bottom: #EE0004 solid 2px;
   background: url(../image/error1.png) no-repeat right;
 }
-/* line 123, ../scss/components/_form.scss */
+/* line 124, ../scss/components/_form.scss */
 main .form__group select.error {
   border-bottom: #EE0004 solid 2px;
   background: url(../image/error1.png) no-repeat;
   background-position: 90%;
 }
-/* line 130, ../scss/components/_form.scss */
+/* line 131, ../scss/components/_form.scss */
 main .form .birth {
   position: relative;
 }
-/* line 132, ../scss/components/_form.scss */
+/* line 133, ../scss/components/_form.scss */
 main .form .birth select.error {
   background-position: 76%;
 }
-/* line 135, ../scss/components/_form.scss */
+/* line 136, ../scss/components/_form.scss */
 main .form .birth label.error {
   position: absolute;
   top: 100%;
   left: 0;
 }
-/* line 141, ../scss/components/_form.scss */
+/* line 142, ../scss/components/_form.scss */
 main .form__header {
   color: #0D2240;
   font-family: "Roboto", sans-serif;
@@ -1310,47 +1311,51 @@ main .form__header {
   padding-right: 40px;
   width: 90%;
 }
-/* line 149, ../scss/components/_form.scss */
+/* line 150, ../scss/components/_form.scss */
 main .form .date {
   width: 30%;
   margin-right: 5px;
 }
-/* line 153, ../scss/components/_form.scss */
+/* line 154, ../scss/components/_form.scss */
 main .form .month {
   padding-top: 10px;
 }
-/* line 156, ../scss/components/_form.scss */
+/* line 157, ../scss/components/_form.scss */
 main .form__indication {
   margin-top: 30px;
 }
-/* line 159, ../scss/components/_form.scss */
+/* line 160, ../scss/components/_form.scss */
 main .form-select {
   background-color: transparent;
   border-color: transparent;
   border-bottom: #032e5a solid 2px;
   color: #747373;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   padding: 10px 0 0 10px;
   width: 95%;
 }
-/* line 168, ../scss/components/_form.scss */
+/* line 169, ../scss/components/_form.scss */
 main .form-select option {
   color: #0D2240;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
 }
-/* line 174, ../scss/components/_form.scss */
+/* line 175, ../scss/components/_form.scss */
 main .form__terms {
   padding-top: 20px;
   width: 100%;
 }
 /* line 178, ../scss/components/_form.scss */
+main .form__terms label.error {
+  font-weight: 400;
+}
+/* line 182, ../scss/components/_form.scss */
 main .form__requisitos {
   padding-left: 30px;
   margin-bottom: -20px;
 }
-/* line 182, ../scss/components/_form.scss */
+/* line 186, ../scss/components/_form.scss */
 main .form__actions {
   padding: 20px 0 20px 0;
   position: relative;
@@ -1358,115 +1363,115 @@ main .form__actions {
   top: 4%;
   width: 70%;
 }
-/* line 188, ../scss/components/_form.scss */
+/* line 192, ../scss/components/_form.scss */
 main .form__actions .registro {
   padding: 15px 40px 15px 40px;
 }
 
 @media (min-width: 360px) {
-  /* line 197, ../scss/components/_form.scss */
+  /* line 201, ../scss/components/_form.scss */
   main .form__image {
     width: 100%;
   }
-  /* line 201, ../scss/components/_form.scss */
+  /* line 205, ../scss/components/_form.scss */
   main .form__description p {
     line-height: 22px;
     padding: 0 40px 0 25px;
   }
-  /* line 207, ../scss/components/_form.scss */
+  /* line 211, ../scss/components/_form.scss */
   main .form__group {
     left: 5%;
   }
-  /* line 210, ../scss/components/_form.scss */
+  /* line 214, ../scss/components/_form.scss */
   main .form__header {
     padding-right: 100px;
   }
 }
 @media (min-width: 414px) {
-  /* line 220, ../scss/components/_form.scss */
+  /* line 224, ../scss/components/_form.scss */
   main .form__description p {
     line-height: 22px;
     padding: 0 47px 0 30px;
   }
-  /* line 225, ../scss/components/_form.scss */
+  /* line 229, ../scss/components/_form.scss */
   main .form__actions {
     left: 23%;
   }
 }
 @media (min-width: 540px) {
-  /* line 234, ../scss/components/_form.scss */
+  /* line 238, ../scss/components/_form.scss */
   main .form__header {
     padding-right: 200px;
   }
-  /* line 237, ../scss/components/_form.scss */
+  /* line 241, ../scss/components/_form.scss */
   main .form__actions {
     left: 30%;
   }
 }
 @media (min-width: 720px) {
-  /* line 247, ../scss/components/_form.scss */
+  /* line 251, ../scss/components/_form.scss */
   main .form__group-data {
     padding-left: 50px;
   }
-  /* line 250, ../scss/components/_form.scss */
+  /* line 254, ../scss/components/_form.scss */
   main .form__group-id {
     padding-left: 50px;
   }
-  /* line 253, ../scss/components/_form.scss */
+  /* line 257, ../scss/components/_form.scss */
   main .form__group select.error {
     background-position: 95%;
   }
-  /* line 259, ../scss/components/_form.scss */
+  /* line 263, ../scss/components/_form.scss */
   main .form__header {
     padding-right: 300px;
   }
-  /* line 262, ../scss/components/_form.scss */
+  /* line 266, ../scss/components/_form.scss */
   main .form .check {
     padding-top: 20px;
   }
-  /* line 265, ../scss/components/_form.scss */
+  /* line 269, ../scss/components/_form.scss */
   main .form__terms {
     padding-left: 120px;
   }
-  /* line 268, ../scss/components/_form.scss */
+  /* line 272, ../scss/components/_form.scss */
   main .form__actions {
     left: 24%;
     width: 40%;
   }
 }
 @media (min-width: 960px) {
-  /* line 279, ../scss/components/_form.scss */
+  /* line 283, ../scss/components/_form.scss */
   main .form__top h2 {
     font-size: 4.5rem;
   }
-  /* line 283, ../scss/components/_form.scss */
+  /* line 287, ../scss/components/_form.scss */
   main .form__group {
     left: 6%;
     top: 20%;
   }
-  /* line 286, ../scss/components/_form.scss */
+  /* line 290, ../scss/components/_form.scss */
   main .form__group-data {
     padding-left: 50px;
     padding-top: 40px;
     display: flex;
   }
-  /* line 291, ../scss/components/_form.scss */
+  /* line 295, ../scss/components/_form.scss */
   main .form__group-id {
     padding-left: 50px;
     padding-top: 40px;
     display: flex;
     flex-direction: row-reverse;
   }
-  /* line 298, ../scss/components/_form.scss */
+  /* line 302, ../scss/components/_form.scss */
   main .form__header {
     padding-right: 150px;
   }
-  /* line 301, ../scss/components/_form.scss */
+  /* line 305, ../scss/components/_form.scss */
   main .form__requisitos {
     padding-left: 30px;
     margin-bottom: -55px;
   }
-  /* line 306, ../scss/components/_form.scss */
+  /* line 310, ../scss/components/_form.scss */
   main .form__description p {
     font-size: 1.6rem;
     position: relative;
@@ -1474,67 +1479,67 @@ main .form__actions .registro {
     padding: 0 10px 20px 10px;
     width: 50%;
   }
-  /* line 315, ../scss/components/_form.scss */
+  /* line 319, ../scss/components/_form.scss */
   main .form .birth label.error {
     top: 75%;
   }
-  /* line 319, ../scss/components/_form.scss */
+  /* line 323, ../scss/components/_form.scss */
   main .form select.error {
     background-position: 90%;
   }
-  /* line 323, ../scss/components/_form.scss */
+  /* line 327, ../scss/components/_form.scss */
   main .form__indication {
     width: 80%;
   }
-  /* line 326, ../scss/components/_form.scss */
+  /* line 330, ../scss/components/_form.scss */
   main .form .date {
     margin-right: 5px;
     width: 25%;
   }
-  /* line 330, ../scss/components/_form.scss */
+  /* line 334, ../scss/components/_form.scss */
   main .form__terms {
     left: 12%;
     position: relative;
     top: 5%;
     width: 80%;
   }
-  /* line 336, ../scss/components/_form.scss */
+  /* line 340, ../scss/components/_form.scss */
   main .form__actions {
     top: 10%;
   }
 }
 @media (min-width: 1140px) {
-  /* line 345, ../scss/components/_form.scss */
+  /* line 349, ../scss/components/_form.scss */
   main .form__group {
     left: 20%;
     width: 60%;
     padding-top: 0px;
   }
-  /* line 349, ../scss/components/_form.scss */
+  /* line 353, ../scss/components/_form.scss */
   main .form__group-data {
     padding-left: 40px;
   }
-  /* line 352, ../scss/components/_form.scss */
+  /* line 356, ../scss/components/_form.scss */
   main .form__group-id {
     padding-left: 40px;
   }
-  /* line 356, ../scss/components/_form.scss */
+  /* line 360, ../scss/components/_form.scss */
   main .form__terms {
     left: 11%;
     top: 0%;
     width: 80%;
   }
-  /* line 361, ../scss/components/_form.scss */
+  /* line 365, ../scss/components/_form.scss */
   main .form__actions {
     top: 3%;
   }
 }
 @media (min-width: 1440px) {
-  /* line 372, ../scss/components/_form.scss */
+  /* line 376, ../scss/components/_form.scss */
   main .form__header {
     padding-right: 300px;
   }
-  /* line 375, ../scss/components/_form.scss */
+  /* line 379, ../scss/components/_form.scss */
   main .form__terms {
     left: 20%;
     width: 57%;
