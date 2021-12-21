@@ -1524,6 +1524,17 @@ main .form__actions .registro {
     top: 3%;
   }
 }
+@media (min-width: 1440px) {
+  /* line 367, ../scss/components/_form.scss */
+  main .form__header {
+    padding-right: 300px;
+  }
+  /* line 370, ../scss/components/_form.scss */
+  main .form__terms {
+    left: 20%;
+    width: 57%;
+  }
+}
 /* line 3, ../scss/components/_slider-home.scss */
 main .slider-home__top {
   color: #ffffff;

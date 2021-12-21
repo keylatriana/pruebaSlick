@@ -360,3 +360,18 @@ main{
     }
 
 }
+@include mq-min(xxl) {
+    main{
+        .form{
+            
+            &__header{
+                padding-right:300px;
+            }
+            &__terms{
+                left: 20%;
+                width: 57%;
+            }
+        }
+    }
+
+}
