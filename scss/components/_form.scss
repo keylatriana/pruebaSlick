@@ -47,7 +47,7 @@ main{
                 color: #747373;
                 font-family: $font-primary;
                 font-size:1.4rem;
-                font-weight: 500;
+                font-weight:600;
                 padding: 10px 30px 0 10px;
                 width: 95%;
                 border-color: transparent;
@@ -119,20 +119,18 @@ main{
             }
             input.error{
                 border-bottom: color(alerts,error) solid 2px;
-                background: url(../image/error1.png) no-repeat right;
+                background: url(../image/error3.png) no-repeat right;
             }
             select.error{
                 border-bottom: color(alerts,error) solid 2px;
-                background: url(../image/error1.png) no-repeat;
-                background-position: 90%;
+                background: url(../image/error1.png) no-repeat right;
                 
             }
+            
         }
+
         .birth{
             position: relative;
-            select.error{
-                background-position: 76%;
-            }
             label.error{
                 position: absolute;
                 top: 100%;
@@ -153,25 +151,33 @@ main{
         }
         .month{
             padding-top: 10px;
+            padding-bottom: 1px;
         }
         &__indication{
             margin-top: 30px;
         }
         &-select{
             background-color: transparent;
+            background: url(../image/chevron1.png) no-repeat;
+            background-position: 95%;
             border-color: transparent;
             border-bottom: #032e5a solid 2px;
             color: #747373;
+	        display: inline-block;
             font-family: $font-primary;
             font-weight: 600;
-            padding: 10px 0 0 10px;
+            padding: 13px 0 0 10px;
             width: 95%;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
             option{
                 color: color(secondary,base);
                 font-family: $font-primary;
-                font-weight: 600;
+                font-weight: 600;           
             }
         }
+        
         &__terms{
             padding-top: 20px;
             width: 100%;
@@ -254,10 +260,6 @@ main{
                 &-id{
                     padding-left: 50px;
                 }
-                select.error{
-                    background-position: 95%;
-                    
-                }
                 
             }
             &__header{
@@ -319,10 +321,6 @@ main{
                 label.error{
                     top: 75%;
                 }
-            }
-            select.error{
-                background-position: 90%;
-                
             }
             &__indication{
                 width: 80%;
