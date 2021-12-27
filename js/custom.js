@@ -21,7 +21,18 @@ $(document).ready(function(){
                 || (Number(value) > Number($(params).val())); 
         },
         ); */
-       
+       /*  $.validator.addMethod(
+            "date1",
+            function ( value, element ) {
+                var birthdate = new Date($("#year").val()); // Se Procede a calcular en base a la fecha
+                var nowyear = now.getFullYear();
+                if ( ! bits )
+                    return this.optional(element) || false;
+                str = bits[ 1 ] + '/' + bits[ 0 ] + '/' + bits[ 2 ];
+                return this.optional(element) || !/Invalid|NaN/.test(new Date( str ));
+            },
+            "Please enter a date in the format dd/mm/yyyy"
+        ); */
     $("#form-validation").validate({
         rules: {
             name: {
@@ -118,7 +129,7 @@ $(document).ready(function(){
             },
             year: {
                 required: "Este campo es obligatorio.",
-                range: "Lo siento, usted es menor de edad",
+                range: "Edad fuera de rango, tiene que ser mayor de edad",
                 number: "Por favor, escribe un número entero válido.",
                 greaterThan:"Must be greater than {0}."
                 
