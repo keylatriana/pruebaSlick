@@ -170,27 +170,27 @@
                     <div class="form__group-data">
                         <div class="form__indication" >
                             <label  class="form__header" for="name">NOMBRE*</label>
-                            <input type="text" class="required" maxlength="30" minlength="3" placeholder="INGRESA TU NOMBRE" id="name" name="user_name">  
+                            <input type="text" class="required AlphabetsOnly accept" maxlength="30" minlength="3" placeholder="INGRESA TU NOMBRE" id="name" name="name">  
                         </div>
                         <div class="form__indication">
                             <label class="form__header" for="name">APELLIDO*</label>
-                            <input  type="text" class="required" maxlength="30" minlength="3" placeholder="INGRESA TU APELLIDO" id="lastNane" name="user_lastNane">
+                            <input  type="text" class="required" maxlength="30" minlength="3" placeholder="INGRESA TU APELLIDO" id="lastName" name="lastName">
                         </div>
                     </div>
                     <div class="form__group-id">
                         <div class="form__indication">
                             <label class="form__header" for="identification">CÉDULA*</label>
-                            <input type="text" class="required" id="identification" maxlength="10" minlength="10" name="user_identification" placeholder="INGRESA TU CEDULA">
+                            <input type="text" class="required" id="identification" maxlength="10" minlength="10" name="identification" placeholder="INGRESA TU CEDULA">
                         </div>
                         <div class="form__indication">
                             <label class="form__header" for="cell">TELÉFONO*</label>
-                            <input type="text" class="required" id="cell" name="user_cell" maxlength="10" minlength="10" placeholder="INGRESA TU TELEFONO">
+                            <input type="text" class="required" id="cell" name="cell" maxlength="10" minlength="10" placeholder="INGRESA TU TELEFONO">
                         </div>
                     </div>
                     <div class="form__group-data">
                         <div class="form__indication"> 
                             <label class="form__header" for="mail">CORREO ELECTRÓNICO*:</label>
-                            <input type="email" class="required" id="mail" name="user_email" placeholder="INGRESA TU CORREO">
+                            <input type="email" class="required" id="mail" name="mail" placeholder="INGRESA TU CORREO">
                         </div>
                         <div class="form__indication">
                             <label class="form__header" for="province">PROVINCIA</label>
@@ -259,10 +259,10 @@
                                 <option value="sinRespuesta">PREFIERO NO RESPONDER</option>
                             </select>
                         </div>
-                        <div class="form__indication birth"> 
-                            <label class="form__header" for="date">FECHA DE NACIMIENTO*</label>
-                            <input class="date required"  type="text" id="date" name="day" placeholder="DD">                                
-                            <select id="date"  name="month" type="text" class=" month date required form-select">
+                        <div class="form__indication birth" id="birth" > 
+                            <label class="form__header" for="fecha">FECHA DE NACIMIENTO*</label>
+                            <input class="date2 day required"  type="text" id="fecha" name="day" placeholder="DD">                                
+                            <select id="fecha"  name="month" type="text" class=" month date2 required form-select">
                                 <option value="" selected="selected">MM</option>
                                 <option value="01">ENERO</option>
                                 <option value="02">FEBRERO</option>
@@ -277,7 +277,7 @@
                                 <option value="11">NOVIEMBRE</option>
                                 <option value="12">DICIEMBRE</option>
                             </select>                            
-                            <input class="date required" type="text" id="date" name="year" placeholder="AAAA"> 
+                            <input class="date2 required year" type="text" id="fecha" name="year" placeholder="AAAA"> 
                         </div>
                     </div>
                     <div class="form__terms">
@@ -300,10 +300,9 @@
     </main>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="js/slick.min.js" ></script>
-    <script src="js/taduccion.js"></script>
-    <script src="js/form.js" ></script>
-    <script src="js/slider.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

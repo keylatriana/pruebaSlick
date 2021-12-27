@@ -145,7 +145,7 @@ main{
             padding-right: 40px;
             width: 90%;
         }
-        .date{
+        .date2{
             width: 30%;
             margin-right: 5px;
         }
@@ -301,6 +301,13 @@ main{
                     flex-direction: row-reverse;
                 }
             }
+            .birth{
+                label.error{
+                    position: absolute;
+                    top: 52px;
+                    left: 0;
+                }
+            }
             &__header{
                 padding-right:150px;
             }
@@ -317,15 +324,10 @@ main{
                     width: 50%;    
                 }
             }
-            .birth{
-                label.error{
-                    top: 75%;
-                }
-            }
             &__indication{
                 width: 80%;
             }
-            .date{
+            .date2{
                 margin-right: 5px;
                 width: 25%;
             }
@@ -368,6 +370,17 @@ main{
 
 }
 @include mq-min(xxl) {
+    main{
+        .form{
+            &__terms{
+                left: 10%;
+                width: 78%;
+            }
+        }
+    }
+
+}
+@include mq-min(xxxl) {
     main{
         .form{
             

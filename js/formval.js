@@ -1,11 +1,41 @@
 $(document).ready(function () {
 
+    /*  $('.AlphabetsOnly').keypress(function (e) {
+         var regex = new RegExp(/^[a-zA-Z\s]+$/);
+         var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+         if (regex.test(str)) {
+             return true;
+             "Letters and spaces only please"
+         }
+         else {
+             e.preventDefault();
+             return false;
+         }
+     }); */
     //Metodo para validar texto
     jQuery.validator.addMethod("accept", function (value, element, param) {
         return value.match(new RegExp("." + param + "$"));
-    }); 
+    });
+
     //metodo para validar a mayor de edad
- 
+ /*    $("#date").on("change", function () {
+        var now = new Date();
+        var birthdate = new Date($("#date").val()); // Se Procede a calcular en base a la fecha
+        var nowyear = now.getFullYear();
+        var birthyear = birthdate.getFullYear();
+        var age = nowyear - birthyear + 1;
+        alert("Invalid Date Range + ('age')");
+        if (age > 18) { // Validamos si es mayor o menor
+            // evento para el input habilitarlo
+            console.log("Mayor de edad");
+            RepresentanteValidacion.disabled = RepresentanteValidacion.disabled; // Deshabilitado
+        }
+        else if (age < 18) {
+            console.log("Menor de edad");
+            // evento para el input habilitarlo
+            RepresentanteValidacion.disabled = !RepresentanteValidacion.disabled; // Habilitado
+        }
+    }); */
      /*    jQuery.validator.addMethod("greaterThan", 
         function(value, element, params) {
 
@@ -17,7 +47,49 @@ $(document).ready(function () {
                 || (Number(value) > Number($(params).val())); 
         },
         ); */
-       
+        /* var to = $(".year").val();
+
+            if(Date.parse(to) >= 18){
+            alert("Invalid Date Range");
+            }
+            else{
+            alert("Valid date Range");
+            } */
+
+    /* function ValidarF() {
+                var date1Var = $("#date").val();
+                var date1;
+                var mes = date1Var.toString().substr(2,2);       
+                var dias = date1Var.toString().substr(0,2);
+                var anio = date1Var.toString().substr(4,2);
+                 //Si vienen 3 caracteres tiro error.
+                
+                if(date1Var.length==4) {
+                  $("#date").val(date1Var+'18');
+                  anio='18'
+                }
+                
+                if (dias<1 ||dias>31)  {
+                    validada.text("Dias entre 01 y 31");  
+                    return;
+                }
+                
+                anio='20'+anio;
+                //Seteo el año hasta 2018
+                if (anio>2021) {
+                  validada.text("Año no puede ser mayor a 2021");  
+                  return;
+                }
+                var fecha_formateada=[dias,mes,anio].join('-');
+                var fecha_iso = [anio,mes,dias].join('-');
+                var date=new Date(fecha_iso);
+                
+                if(date.getTime()>Date.now()) {
+                  alert("Fecha no puede ser mayor a hoy");
+                  return;
+                }
+                
+                } */
     $("#form-validation").validate({
         rules: {
             name: {
@@ -59,17 +131,22 @@ $(document).ready(function () {
             day: {
                 required: true,
                 number: true,
-                range: [1,31]
+                date: true,
+                date2:true
             },
             month: {
                 required: true,
-                number: true
+                number: true,
+                date: true,
+                
+                date2:true
             },
             year: {
                 required: true,
                 number: true,
-                range: [1900,2002],
-                range2: [1,1899]
+                date: true,     
+                
+                date2:true         
             }
         },
         messages: {
@@ -109,14 +186,16 @@ $(document).ready(function () {
                 required: "Este campo es obligatorio.",
                 number: "Por favor, escribe un número entero válido.",
                 range: "Escriba un día correcto",
+                date: "Por favor, escribe una fecha válida."
             },
             month: {
                 required: "Este campo es obligatorio.",
+                date: "Por favor, escribe una fecha válida."
             },
             year: {
                 required: "Este campo es obligatorio.",
-                range: "Lo siento, usted es menor de edad",
-                range2: "Por favor, escribe una fecha válida.",
+                date: "Por favor, escribe una fecha válida.",
+                range: "Escriba un día correcto",
                 greaterThan:"Must be greater than {0}."
                 
             },
@@ -137,6 +216,7 @@ $(document).ready(function () {
         let mail = $("#mail").val()
         let province = $("#province").val()
         let gender = $("#gender").val()
+        let date = $("#date").val()
         let politica = $("#politica").is(":checked")
     });
 });

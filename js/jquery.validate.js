@@ -1451,7 +1451,11 @@ $.extend( $.validator, {
 					}
 				}
 
-				return this.optional( element ) || !/Invalid|NaN/.test( new Date( value ).toString() );
+				var d = parseInt(comp[0], 10);
+				var m = parseInt(comp[1], 10);
+				var y = parseInt(comp[2], 10);
+				var date = new Date(y, m - 1, d);
+				return this.optional(element) || (date.getFullYear() == y && date.getMonth() + 1 == m && date.getDate() == d);
 			};
 		}() ),
 

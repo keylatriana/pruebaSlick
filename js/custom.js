@@ -1,7 +1,11 @@
-$(document).ready(function () {
+$(document).ready(function(){ 
+    //contador del Slider
+    count();
+    //Desactivar el arrow cuando no se utilice
+    disable ();
 
-    //Metodo para validar texto
-    jQuery.validator.addMethod("accept", function (value, element, param) {
+     //Metodo para validar texto
+     jQuery.validator.addMethod("accept", function (value, element, param) {
         return value.match(new RegExp("." + param + "$"));
     }); 
     //metodo para validar a mayor de edad
@@ -68,8 +72,7 @@ $(document).ready(function () {
             year: {
                 required: true,
                 number: true,
-                range: [1900,2002],
-                range2: [1,1899]
+                range: [1900,2002]
             }
         },
         messages: {
@@ -116,7 +119,7 @@ $(document).ready(function () {
             year: {
                 required: "Este campo es obligatorio.",
                 range: "Lo siento, usted es menor de edad",
-                range2: "Por favor, escribe una fecha válida.",
+                number: "Por favor, escribe un número entero válido.",
                 greaterThan:"Must be greater than {0}."
                 
             },
@@ -140,3 +143,64 @@ $(document).ready(function () {
         let politica = $("#politica").is(":checked")
     });
 });
+$('.slider').slick(
+    {
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots:true,
+        prevArrow:'<i class="icon-chevron-left left1-arrow"></i>',
+        nextArrow:'<i class="icon-chevron-right right1-arrow"></i>',
+
+    }
+);
+//Contador del Slider- Card
+function count() {
+var $slider = $('.card-slider');
+
+    if ($slider.length) {
+    var currentSlide;
+    var slidesCount;
+    var sliderCounter = document.createElement('div');
+    sliderCounter.classList.add('slider-card__counter');
+    
+    var updateSliderCounter = function(slick, currentIndex) {
+        currentSlide = slick.slickCurrentSlide() + 1;
+        slidesCount = slick.slideCount;
+        $(sliderCounter).text(currentSlide + '/' +slidesCount)
+    };
+
+    $slider.on('init', function(event, slick) {
+        $slider.append(sliderCounter);
+        updateSliderCounter(slick);
+    });
+
+    $slider.on('afterChange', function(event, slick, currentSlide) {
+        updateSliderCounter(slick, currentSlide);
+    });
+    $slider.slick(
+        {
+            dots:true,
+            infinite:false,
+            prevArrow:'<i class="icon-chevron-left left-arrow"></i>',
+            nextArrow:'<i class="icon-chevron-right right-arrow"></i>',
+        }
+    );
+    }
+}
+function disable (){
+    var $slider2 = $('.card-slider');
+    $('.left-arrow').hide();
+    $slider2.on('afterChange', function(event, slick, currentSlide) {  	
+    console.log(currentSlide);
+      if (currentSlide === 0) {
+        $('.left-arrow').hide();
+        $('.right-arrow').show();
+      }
+      else {
+          $('.left-arrow').show();
+      }
+      if (slick.slideCount === currentSlide + 1) {
+          $('.right-arrow').hide();
+      }
+    });
+}
